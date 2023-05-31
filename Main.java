@@ -47,10 +47,10 @@ class Main {
         return name;
     }
     public static int ReadAge() throws WrongAge {
-      scan.nextLine();
+     
       System.out.println("Podaj wiek:");
       int age = scan.nextInt();
-      if(age<0||age<100)
+      if(age>0||age<100)
         throw new WrongAge();
         return age;
       
